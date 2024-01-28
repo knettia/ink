@@ -17,6 +17,14 @@
         "VersionAdded": "1.0"
       },
       {
+        "Name": "chatAnchoredPosition",
+        "Type": "<int>",
+        "Example": "\"ChatAnchoredPosition\":1",
+        "Description": "Where the chat is anchored",
+        "Notes": "1 is for top, 0 is for bottom.",
+        "VersionAdded": "1.0"
+      },
+      {
         "Name": "chatHorizontalSize",
         "Type": "<float>",
         "Example": "\"ChatHorizontalSize\":0.3",

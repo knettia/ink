@@ -19,7 +19,7 @@
       {
         "Name": "chatHorizontalSize",
         "Type": "<float>",
-        "Example": "\"ChatHorizontalSize\":.3",
+        "Example": "\"ChatHorizontalSize\":0.3",
         "Description": "How big the chat is, horizontally",
         "Notes": "Anything over 1 and under .01 is unpredicatable, better to follow restrictions.",
         "VersionAdded": "1.0"

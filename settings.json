@@ -3,7 +3,7 @@
     {
       "Name": "chatEnabled",
       "Type": "<boolean>",
-      "Example": "\"ChatEnabled\":false",
+      "Example": "\"ChatEnabled\":true",
       "Description": "Used to enable/disable chat",
       "Notes": "bubbleChatEnabled automatically disabled when disabled.",
       "VersionAdded": "1.0"
@@ -22,12 +22,12 @@
       "Example": "\"ChatAnchoredPosition\":1",
       "Description": "Where the chat is anchored",
       "Notes": "1 is for top, 0 is for bottom.",
-      "VersionAdded": "1.0"
+      "VersionAdded": "1.2"
     },
     {
       "Name": "chatHorizontalSize",
       "Type": "<float>",
-      "Example": "\"ChatHorizontalSize\":0.4",
+      "Example": "\"ChatHorizontalSize\":0.6",
       "Description": "How big the chat is, horizontally",
       "Notes": "Anything over 1 and under .01 is unpredictable, better to follow restrictions.",
       "VersionAdded": "1.0"
@@ -35,7 +35,7 @@
     {
       "Name": "chatMessageDisplayCount",
       "Type": "<int>",
-      "Example": "\"ChatMessageDisplayCount\":8",
+      "Example": "\"ChatMessageDisplayCount\":18",
       "Description": "How many messages the chat displays",
       "Notes": "Will probably be replaced with chatDisplayLineCount.",
       "VersionAdded": "1.0"
@@ -43,7 +43,7 @@
     {
       "Name": "chatMessageDestroyDelay",
       "Type": "<int>",
-      "Example": "\"ChatMessageDestroyDelay\":22",
+      "Example": "\"ChatMessageDestroyDelay\":16",
       "Description": "How long until a message gets destroyed, in seconds",
       "Notes": "",
       "VersionAdded": "1.0"

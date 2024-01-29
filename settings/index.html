@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INK - wiki</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap">
+  <link rel="stylesheet" href="external/prism/prism.css">
+  <script src="external/prism/prism.js"></script>
+  <style>
+    body {
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    code {
+      border-radius: 4px;
+      padding: 2px 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>INK's Not KAT: Settings Wiki</h2>
+  <div>a wiki for all the available settings customizable by the users, raw Lua file: <a href="settings.lua" target="_blank">settings.lua</a></div>
+  <div>note: still working on adding the parser to the game, might take a while.</div>
+
+  <br>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Example</th>
+        <th>Description</th>
+        <th>Notes</th>
+        <th>Version Added</th>
+      </tr>
+    </thead>
+    <tbody id="settingsTableBody">
+      <!-- Table content will be dynamically generated here -->
+    </tbody>
+  </table>
+
+  <script>
+    async function fetchSettingsData() {
+      const response = await fetch('settings.json');
+      const data = await response.json();
+      return data;
+    }
+
+    async function generateTableRows() {
+      const settingsData = await fetchSettingsData();
+      const tableBody = document.getElementById('settingsTableBody');
+
+      settingsData.settings.forEach(setting => {
+        const row = tableBody.insertRow();
+        const keys = Object.keys(setting);
+
+        keys.forEach(key => {
+          const cell = row.insertCell();
+
+          if (key === 'Example' || key === 'Type') {
+            const codeBox = document.createElement('code');
+            codeBox.classList.add('language-clike');
+            codeBox.textContent = setting[key];
+            cell.appendChild(codeBox);
+            Prism.highlightElement(codeBox);
+          } else {
+            cell.textContent = setting[key];
+          }
+        });
+      });
+    }
+
+    window.onload = function () {
+      generateTableRows();
+    };
+  </script>
+
+</body>
+</html>

@@ -3,50 +3,50 @@
     {
       "Name": "chatEnabled",
       "Type": "<boolean>",
-      "Example": "\"ChatEnabled\":true",
-      "Description": "Empowers the chat ecosystem",
-      "Notes": "Let the chat revolution begin!",
-      "VersionAdded": "4.0"
+      "Example": "\"ChatEnabled\":false",
+      "Description": "Shuts down the chat universe",
+      "Notes": "Silence prevails!",
+      "VersionAdded": "5.0"
     },
     {
       "Name": "bubbleChatEnabled",
       "Type": "<boolean>",
-      "Example": "\"BubbleChatEnabled\":true",
-      "Description": "Elevates the chat experience with floating bubbles",
-      "Notes": "Bubbles soaring to new heights!",
-      "VersionAdded": "4.0"
+      "Example": "\"BubbleChatEnabled\":false",
+      "Description": "Banishes the chat bubbles into oblivion",
+      "Notes": "No more bubbly distractions!",
+      "VersionAdded": "5.0"
     },
     {
       "Name": "chatAnchoredPosition",
       "Type": "<int>",
-      "Example": "\"ChatAnchoredPosition\":4",
-      "Description": "Defies gravity with a floating chat position",
-      "Notes": "4 is for floating position.",
-      "VersionAdded": "4.0"
+      "Example": "\"ChatAnchoredPosition\":-1",
+      "Description": "Enters the negative anchoring dimension",
+      "Notes": "Negative vibes only!",
+      "VersionAdded": "5.0"
     },
     {
       "Name": "chatHorizontalSize",
       "Type": "<float>",
-      "Example": "\"ChatHorizontalSize\":2.0",
-      "Description": "Expands the chat to cover the entire screen",
-      "Notes": "Full-screen chat takeover!",
-      "VersionAdded": "4.0"
+      "Example": "\"ChatHorizontalSize\":0.01",
+      "Description": "Shrinks the chat to the brink of invisibility",
+      "Notes": "The disappearing act!",
+      "VersionAdded": "5.0"
     },
     {
       "Name": "chatMessageDisplayCount",
       "Type": "<int>",
-      "Example": "\"ChatMessageDisplayCount\":100",
-      "Description": "Unleashes an overwhelming number of messages",
-      "Notes": "Chatocalypse now!",
-      "VersionAdded": "4.0"
+      "Example": "\"ChatMessageDisplayCount\":1",
+      "Description": "Limits the chat to a single cryptic message",
+      "Notes": "The enigma of one!",
+      "VersionAdded": "5.0"
     },
     {
       "Name": "chatMessageDestroyDelay",
       "Type": "<int>",
-      "Example": "\"ChatMessageDestroyDelay\":1",
-      "Description": "Swiftly annihilates messages, in seconds",
-      "Notes": "In the blink of an eye!",
-      "VersionAdded": "4.0"
+      "Example": "\"ChatMessageDestroyDelay\":60",
+      "Description": "Delays the message destruction for an eternity",
+      "Notes": "Messages endure through time!",
+      "VersionAdded": "5.0"
     }
   ]
 }

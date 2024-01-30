@@ -3,50 +3,50 @@
     {
       "Name": "chatEnabled",
       "Type": "<boolean>",
-      "Example": "\"ChatEnabled\":false",
-      "Description": "Shuts down the chat universe",
-      "Notes": "Silence prevails!",
-      "VersionAdded": "5.0"
+      "Example": "\"ChatEnabled\":true",
+      "Description": "Unleashes the chaotic chat storm",
+      "Notes": "Chaos reigns supreme!",
+      "VersionAdded": "6.0"
     },
     {
       "Name": "bubbleChatEnabled",
       "Type": "<boolean>",
-      "Example": "\"BubbleChatEnabled\":false",
-      "Description": "Banishes the chat bubbles into oblivion",
-      "Notes": "No more bubbly distractions!",
-      "VersionAdded": "5.0"
+      "Example": "\"BubbleChatEnabled\":true",
+      "Description": "Drowns the screen in a sea of chat bubbles",
+      "Notes": "Bubbles everywhere, no escape!",
+      "VersionAdded": "6.0"
     },
     {
       "Name": "chatAnchoredPosition",
       "Type": "<int>",
-      "Example": "\"ChatAnchoredPosition\":-1",
-      "Description": "Enters the negative anchoring dimension",
-      "Notes": "Negative vibes only!",
-      "VersionAdded": "5.0"
+      "Example": "\"ChatAnchoredPosition\":5",
+      "Description": "Introduces the fifth-dimensional chat anchoring",
+      "Notes": "Beyond the laws of physics!",
+      "VersionAdded": "6.0"
     },
     {
       "Name": "chatHorizontalSize",
       "Type": "<float>",
-      "Example": "\"ChatHorizontalSize\":0.01",
-      "Description": "Shrinks the chat to the brink of invisibility",
-      "Notes": "The disappearing act!",
-      "VersionAdded": "5.0"
+      "Example": "\"ChatHorizontalSize\":5.0",
+      "Description": "Expands the chat to consume the universe",
+      "Notes": "The universe is the chat!",
+      "VersionAdded": "6.0"
     },
     {
       "Name": "chatMessageDisplayCount",
       "Type": "<int>",
-      "Example": "\"ChatMessageDisplayCount\":1",
-      "Description": "Limits the chat to a single cryptic message",
-      "Notes": "The enigma of one!",
-      "VersionAdded": "5.0"
+      "Example": "\"ChatMessageDisplayCount\":500",
+      "Description": "Floods the cosmos with an astronomical number of messages",
+      "Notes": "The chat singularity!",
+      "VersionAdded": "6.0"
     },
     {
       "Name": "chatMessageDestroyDelay",
       "Type": "<int>",
-      "Example": "\"ChatMessageDestroyDelay\":60",
-      "Description": "Delays the message destruction for an eternity",
-      "Notes": "Messages endure through time!",
-      "VersionAdded": "5.0"
+      "Example": "\"ChatMessageDestroyDelay\":0",
+      "Description": "Instantaneously vaporizes messages upon appearance",
+      "Notes": "Message annihilation at the speed of light!",
+      "VersionAdded": "6.0"
     }
   ]
 }

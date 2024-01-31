@@ -29,7 +29,7 @@
         "Type": "<float>",
         "Example": "\"ChatHorizontalSize\":0.3",
         "Description": "How big the chat is, horizontally",
-        "Notes": "Anything over 1 and under .01 is unpredicatable, better to follow restrictions.",
+        "Notes": "Anything over 1.0 and under 0.1 is unpredicatable, better to follow restrictions.",
         "VersionAdded": "1.0"
       },
       {

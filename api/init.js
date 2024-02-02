@@ -6,7 +6,11 @@ const port = 3000;
 
 app.use(bodyParser.json());
 
-const serverTable = [];
+let serverTable = [];
+
+const SERVER_NOT_FOUND_ERROR = 'Server not found.';
+const SERVER_INIT_SUCCESS_MESSAGE = 'Server initialized successfully.';
+const SERVER_DESTROY_SUCCESS_MESSAGE = 'Server destroyed successfully.';
 
 app.post('/api/initialize', (req, res) => {
   const { iso, ip } = req.body;
@@ -16,37 +20,29 @@ app.post('/api/initialize', (req, res) => {
   }
 
   serverTable.push({ iso, ip });
-  res.json({ message: 'Server initialized successfully.' });
+  res.json({ message: SERVER_INIT_SUCCESS_MESSAGE });
 });
 
 app.get('/api/get_server/:param', (req, res) => {
-  const param = req.params.param;
-  let result;
+  const { param } = req.params;
+  const result = param.includes('.') ? serverTable.find(server => server.ip === param) : serverTable.filter(server => server.iso === param);
 
-  if (param.includes('.')) {
-    result = serverTable.find(server => server.ip === param);
-  } else {
-    result = serverTable.filter(server => server.iso === param);
-  }
-
-  if (!result) {
-    return res.status(404).json({ error: 'Server not found.' });
+  if (!result || (Array.isArray(result) && result.length === 0)) {
+    return res.status(404).json({ error: SERVER_NOT_FOUND_ERROR });
   }
 
   res.json(result);
 });
 
 app.delete('/api/destroy_server/:ip', (req, res) => {
-  const ipToDelete = req.params.ip;
+  const { ip } = req.params;
+  serverTable = serverTable.filter(server => server.ip !== ip);
 
-  const index = serverTable.findIndex(server => server.ip === ipToDelete);
-
-  if (index === -1) {
-    return res.status(404).json({ error: 'Server not found.' });
+  if (serverTable.length === 0) {
+    return res.status(404).json({ error: SERVER_NOT_FOUND_ERROR });
   }
 
-  serverTable.splice(index, 1);
-  res.json({ message: 'Server destroyed successfully.' });
+  res.json({ message: SERVER_DESTROY_SUCCESS_MESSAGE });
 });
 
 app.listen(port, () => {

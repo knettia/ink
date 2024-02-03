@@ -5,7 +5,7 @@
         "Type": "<boolean>",
         "Example": "\"ChatEnabled\":true",
         "Description": "Used to enable/disable chat",
-        "Notes": "bubbleChatEnabled automatically disabled when disabled.",
+        "Notes": "When disabled, bubbleChatEnabled is automatically turned off as well.",
         "VersionAdded": "1.0"
       },
       {

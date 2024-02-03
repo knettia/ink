@@ -37,7 +37,7 @@
         "Type": "<int>",
         "Example": "\"ChatMessageDisplayCount\":15",
         "Description": "How many messages the chat displays",
-        "Notes": "Will probably be replaced with chatDisplayLineCount.",
+        "Notes": "This field may be deprecated in future versions, consider using chatDisplayLineCount instead.",
         "VersionAdded": "1.0"
       },
       {

@@ -21,7 +21,7 @@
         "Type": "<int>",
         "Example": "\"ChatAnchoredPosition\":1",
         "Description": "Where the chat is anchored",
-        "Notes": "1 is for top, 0 is for bottom.",
+        "Notes": "Use 1 for top anchoring, 0 for bottom anchoring.",
         "VersionAdded": "1.0"
       },
       {

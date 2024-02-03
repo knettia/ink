@@ -44,7 +44,7 @@
         "Name": "chatMessageDestroyDelay",
         "Type": "<int>",
         "Example": "\"ChatMessageDestroyDelay\":20",
-        "Description": "How long until a message gets destroyed, in seconds",
+        "Description": "Determines the time delay (in seconds) before a displayed message is automatically destroyed",
         "Notes": "",
         "VersionAdded": "1.0"
       }

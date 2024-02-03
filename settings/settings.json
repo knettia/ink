@@ -20,7 +20,7 @@
         "Name": "chatAnchoredPosition",
         "Type": "<int>",
         "Example": "\"ChatAnchoredPosition\":1",
-        "Description": "Where the chat is anchored",
+        "Description": "Specifies where the chat is anchored",
         "Notes": "Use 1 for top anchoring, 0 for bottom anchoring.",
         "VersionAdded": "1.0"
       },

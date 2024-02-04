@@ -14,7 +14,7 @@
         "Example": "\"BubbleChatEnabled\":true",
         "Description": "Whether or not bubble chat is enabled",
         "Notes": "",
-        "VersionAdded": "1.0"
+        "VersionAdded": "0.0"
       },
       {
         "Name": "chatAnchoredPosition",

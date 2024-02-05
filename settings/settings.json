@@ -27,7 +27,7 @@
       {
         "Name": "chatVerticalOffset",
         "Type": "<int>",
-        "Example": "\"ChatVerticalOffset\":0",
+        "Example": "\"ChatVerticalOffset\":5",
         "Description": "Specifies the chat vertical offset, in pixels",
         "Notes": "Dependent on chatAnchoredPosition, either offset can be upwards or downwards.",
         "VersionAdded": "1.1"

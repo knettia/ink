@@ -25,6 +25,14 @@
         "VersionAdded": "1.0"
       },
       {
+        "Name": "chatVerticalOffset",
+        "Type": "<int>",
+        "Example": "\"ChatVerticalOffset\":0",
+        "Description": "Specifies the chat vertical offset, in pixels",
+        "Notes": "Dependent on chatAnchoredPosition, either offset can be upwards or downwards.",
+        "VersionAdded": "1.1"
+      },
+      {
         "Name": "chatHorizontalSize",
         "Type": "<float>",
         "Example": "\"ChatHorizontalSize\":0.3",

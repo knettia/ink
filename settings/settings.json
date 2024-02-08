@@ -30,7 +30,7 @@
         "Example": "\"ChatVerticalOffset\":5",
         "Description": "Specifies the chat vertical offset, in pixels",
         "Notes": "Dependent on chatAnchoredPosition, either offset can be upwards or downwards.",
-        "VersionAdded": "1.1"
+        "VersionAdded": "1.0"
       },
       {
         "Name": "chatHorizontalSize",
